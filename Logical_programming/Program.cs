@@ -9,7 +9,7 @@ namespace Logical_programming
             bool isrun = true;
             while (isrun)
             {
-                Console.WriteLine("Select:\n1)Fibonacii Series \n2)Perfect Number");
+                Console.WriteLine("Select:\n1)Fibonacii Series \n2)Perfect Number \n3)Prime Number");
                 int option = Int32.Parse(Console.ReadLine());
                 switch (option)
                 {
@@ -21,6 +21,10 @@ namespace Logical_programming
                     case 2:
                         Perfect_Number perfect_Number = new Perfect_Number();
                         perfect_Number.PerfectNumber();
+                        break;
+                    case 3:
+                        Prime_Number Prime_Number = new Prime_Number();
+                        Prime_Number.PrimeNumber();
                         break;
                     default:
                         isrun = false;
