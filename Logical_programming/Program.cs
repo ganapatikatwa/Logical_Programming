@@ -9,7 +9,7 @@ namespace Logical_programming
             bool isrun = true;
             while (isrun)
             {
-                Console.WriteLine("Select:\n1)Fibonacii Series \n2)Perfect Number \n3)Prime Number \n4)Reverse A Number");
+                Console.WriteLine("Select:\n1)Fibonacii Series \n2)Perfect Number \n3)Prime Number \n4)Reverse Number \n5)Coupon Number");
                 int option = Int32.Parse(Console.ReadLine());
                 switch (option)
                 {
@@ -27,8 +27,12 @@ namespace Logical_programming
                         Prime_Number.PrimeNumber();
                         break;
                     case 4:
-                        Reverse_A_Number reverse_A_Number = new Reverse_A_Number();
-                        reverse_A_Number.ReverseNumber();
+                        Reverse_A_Number Reverse_A_Number = new Reverse_A_Number();
+                        Reverse_A_Number.ReverseNumber();
+                        break;
+                    case 5:
+                        Coupon_Number number = new Coupon_Number();
+                        number.Coupon();
                         break;
                     default:
                         isrun = false;
